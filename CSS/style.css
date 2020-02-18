@@ -1,0 +1,85 @@
+.head {
+       float: right;
+   }
+   .textHead {
+    width: 100%;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  color: #F38181;
+   }
+   .leftBlock {
+    width: 400px; /* Ширина элемента в пикселах */
+    height: 400px;
+    margin: auto; /* Выравниваем по центру */
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+    margin-left: 55px;
+   }
+   .centerBlock {
+    width: 400px; /* Ширина элемента в пикселах */
+    height: 400px;
+    margin: auto; /* Выравниваем по центру */
+    margin-left: 55px;
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+   }
+   .rightBlock {
+    width: 400px; /* Ширина элемента в пикселах */
+    height: 400px;
+    margin: auto; /* Выравниваем по центру */
+    margin-left: 60px;
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+   }
+   .text {
+  width: 100%;
+  display: block;
+  margin-top: 55px;
+  font-family: Arial;
+  font-size: 15px;
+  padding-top: 200px;
+  text-align: center;
+  color: #C3BCBC;
+   }
+   
+   .login100-form-btn {
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 100px;
+  width: 50%;
+  height: 45px;
+  border-radius: 10px;
+  background: #F38181;
+  font-family: Arial;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+    }
+   
+    .login100-form-btn:hover {
+         background: #F8ADAD;
+    }
+    
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
