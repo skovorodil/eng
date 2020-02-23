@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-	<link href="/css/main.css" rel="stylesheet" />
+  <title>Family Language</title>
+  <meta charset="UTF-8">
+  <link href="/css/main.css" rel="stylesheet" />
 
 </head>
 <?php
@@ -15,33 +15,33 @@ if (mysqli_connect_errno()) {
 
 <body style="background-color: #fff;">
 
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post">
-					<span class="login100-form-title p-b-43">
-						Вход
-					</span>
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form" method="post">
+          <span class="login100-form-title p-b-43">
+            Вход
+          </span>
 
           <div class="form-button">
           <span class="login-text">Эл. адрес</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" name="user_mail" type="email">
-					</div>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" name="user_mail" type="email">
+          </div>
 
           <span class="login-text">Пароль</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" name="user_pas" type="password">
-					</div>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" name="user_pas" type="password">
+          </div>
 
           </div>
          
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" name="login">
-							Авторизоваться
-						</button>
-					</div>
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" name="login">
+              Авторизоваться
+            </button>
+          </div>
 
           <span class="ili">Или</span>
 
@@ -53,14 +53,14 @@ if (mysqli_connect_errno()) {
                      <span style="color:red; margin-top: 20px;" id="simple"></span>
             
           </div>
-				</form>
-				<div class="login100-more" style="background-image: url('img/loginBack.png');">
-				    <img class="logo" src="img/logo.png">
-				</div>
-			</div>
-		</div>
-	</div>
-	
+        </form>
+        <div class="login100-more" style="background-image: url('img/loginBack.png');">
+            <img class="logo" src="img/logo.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  
 <?php
     if(isset($_POST["login"])){
         if(!empty($_POST['user_mail']) && !empty($_POST['user_pas'])) {

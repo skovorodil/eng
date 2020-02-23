@@ -8,53 +8,53 @@
   text-align: center;
   color: #F38181;
    }
+   .wrapper { 
+     padding-top:50px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+   grid-template-columns: 350px 350px 350px;
+   grid-column-gap: 25px;
+   justify-content: center;
+   
+} 
    .leftBlock {
-    width: 400px; /* Ширина элемента в пикселах */
-    height: 400px;
-    margin: auto; /* Выравниваем по центру */
     margin-top: 180px;
     background: #fff;
     border-radius: 15px 15px 15px 15px;
+    height: 350px;
+    width: 350px;
     float: left;
-    margin-left: 55px;
    }
    .centerBlock {
-    width: 400px; /* Ширина элемента в пикселах */
-    height: 400px;
-    margin: auto; /* Выравниваем по центру */
-    margin-left: 55px;
     margin-top: 180px;
     background: #fff;
     border-radius: 15px 15px 15px 15px;
     float: left;
+      width: 350px;
+    height: 350px;
    }
    .rightBlock {
-    width: 400px; /* Ширина элемента в пикселах */
-    height: 400px;
-    margin: auto; /* Выравниваем по центру */
-    margin-left: 60px;
     margin-top: 180px;
     background: #fff;
     border-radius: 15px 15px 15px 15px;
     float: left;
+      width: 350px;
+    height: 350px;
    }
    .text {
   width: 100%;
   display: block;
-  margin-top: 55px;
+  margin-top: 220px;
   font-family: Arial;
-  font-size: 15px;
-  padding-top: 200px;
+  font-size: 18px;
   text-align: center;
   color: #C3BCBC;
    }
    
    .login100-form-btn {
-  justify-content: center;
-  align-items: center;
+ margin-left:50px;
   margin-top: 25px;
-  margin-left: 100px;
-  width: 50%;
+  width: 70%;
   height: 45px;
   border-radius: 10px;
   background: #F38181;

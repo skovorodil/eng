@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Main Page</title>
-	<meta charset="UTF-8">
-	<link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>Main Page</title>
+    <meta charset="UTF-8">
+    <link href="/css/main_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -18,26 +18,27 @@
    }
 </style>
 
-
+<div class="wrapper">
     <div class="leftBlock">
-    <span class="text">Добро пожаловать в сервис &shy; по изучению английского языка Family Language!</span>
+    <span class="text">Начните изучать новые слова</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Войти" onclick=" location.href='index.php'">
+        <input type="button" class="login100-form-btn" value="Перейти к изучению" onclick=" location.href='words.php'">
             </form>
     </div>
     
     <div class="centerBlock">
-    <span class="text">Добро пожаловать в сервис &shy; по изучению английского языка Family Language!</span>
+    <span class="text">Пройдите тесты</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Войти" onclick=" location.href='index.php'">
+        <input type="button" class="login100-form-btn" value="Проверить знания" onclick=" location.href='index.php'">
             </form>
     </div>
     
     <div class="rightBlock">
-    <span class="text">Добро пожаловать в сервис &shy; по изучению английского языка Family Language!</span>
+    <span class="text">Просмотрите ваш прогресс</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Войти" onclick=" location.href='index.php'">
+        <input type="button" class="login100-form-btn" value="Достижения" onclick=" location.href='index.php'">
             </form>
+    </div>
     </div>
 
 
