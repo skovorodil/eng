@@ -50,14 +50,14 @@
     
     <div class="wrapper2">
     <div class="Block">
-    <span class="text">Животные</span>
+    <span class="text">Транспорт</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
             </form>
     </div>
     
     <div class="Block">
-    <span class="text">Профессии</span>
+    <span class="text">Путешествия</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>

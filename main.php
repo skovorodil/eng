@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Main Page</title>
-    <meta charset="UTF-8">
-    <link href="/css/main_style.css" rel="stylesheet" type="text/css">
+	<title>Main Page</title>
+	<meta charset="UTF-8">
+	<link href="/css/main_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -20,6 +20,7 @@
 
 <div class="wrapper">
     <div class="leftBlock">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/open-book.png">
     <span class="text">Начните изучать новые слова</span>
     <form>
         <input type="button" class="login100-form-btn" value="Перейти к изучению" onclick=" location.href='words.php'">
@@ -27,6 +28,7 @@
     </div>
     
     <div class="centerBlock">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/test-passed.png">
     <span class="text">Пройдите тесты</span>
     <form>
         <input type="button" class="login100-form-btn" value="Проверить знания" onclick=" location.href='index.php'">
@@ -34,6 +36,7 @@
     </div>
     
     <div class="rightBlock">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/medal.png">
     <span class="text">Просмотрите ваш прогресс</span>
     <form>
         <input type="button" class="login100-form-btn" value="Достижения" onclick=" location.href='index.php'">
