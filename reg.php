@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Registration English</title>
-	<meta charset="UTF-8">
-		<link href="/css/main.css" rel="stylesheet" />
-	<style>
+  <title>Family Language - Регистрация</title>
+  <meta charset="UTF-8">
+    <link href="/css/main.css" rel="stylesheet" />
+  <style>
    .logo {
     margin-top: 150px;
     margin-left: 110px;
@@ -16,42 +16,42 @@
 </head>
 <body style="background-color: #666666;">
 
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-		<form class="login100-form validate-form" method="post">
-					<span class="login100-form-title p-b-43">
-						Регистрация
-					</span>
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+    <form class="login100-form validate-form" method="post">
+          <span class="login100-form-title p-b-43">
+            Регистрация
+          </span>
           <div class="form-button">
           <span class="login-text">Эл. адрес</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" type="text" name="email" type="email">
-					</div>
-					
-			<span class="login-text">Имя</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" type="text" name="name">
-					</div>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="email" type="email">
+          </div>
+          
+      <span class="login-text">Имя</span>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" name="name">
+          </div>
 
           <span class="login-text">Пароль</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" type="password" name="pass">
-					</div>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" type="password" name="pass">
+          </div>
           </div>
 
           <div class="container-login100-form-btn">
-            <input type="submit" class="login100-form-btn" name="reg" value="Зарегистрироваться">
+            <input type="submit" class="login100-form-btn" name="reg" id="reg" value="Зарегистрироваться">
             <span style="color:red; margin-top: 20px;" id="simple"></span>
           </div>
-		</form>
-				<div class="login100-more" style="background-image: url('img/loginBack.png');">
-				    <img class="logo" src="img/logo.png">
-				</div>
-			</div>
-		</div>
-	</div>
-	
+    </form>
+        <div class="login100-more" style="background-image: url('img/loginBack.png');">
+            <img class="logo" src="img/logo.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  
 <?php
     $link = @new mysqli('localhost', 'id12319296_root', '123456789', 'id12319296_english');
 if (mysqli_connect_errno()) {
@@ -88,8 +88,8 @@ if (mysqli_connect_errno()) {
         </script>";
         }
     }
-    ?>	
-	
+    ?>  
+  
 
 </body>
 </html>

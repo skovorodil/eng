@@ -1,9 +1,12 @@
+<?php
+    session_start();
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Main Page</title>
-	<meta charset="UTF-8">
-	<link href="/css/main_style.css" rel="stylesheet" type="text/css">
+    <title>Family Language - Главная</title>
+    <meta charset="UTF-8">
+    <link href="/css/main_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -15,8 +18,25 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    margin: 0px;
+    padding: 0px;
    }
 </style>
+
+<div class="header">
+    <?php
+    if(isset($_SESSION['name'])) {
+    echo '<a href="https://dribbble.com/" class="headText">'  .$_SESSION['name']. '</a>';
+    }
+    else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
+    ?>
+    
+    
+    <a href="###" class="headText">Достижения</a>
+    <a href="###" class="headText">Тестирование</a>
+    <a href="words.php" class="headText">Изучить</a>
+    <a href="main.php" class="headText">Главная </a>
+</div>
 
 <div class="wrapper">
     <div class="leftBlock">
@@ -51,6 +71,7 @@ $link = @new mysqli('localhost', 'id12319296_root', '123456789', 'id12319296_eng
 if (mysqli_connect_errno()) {
   echo "Подключение невозможно: ".mysqli_connect_error();
 }
+
 ?>
 
 

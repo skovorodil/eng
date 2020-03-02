@@ -1,9 +1,12 @@
+<?php
+    session_start();
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Main Page</title>
-	<meta charset="UTF-8">
-	<link href="/css/words_style.css" rel="stylesheet" type="text/css">
+    <title>Family Language - Изучить</title>
+    <meta charset="UTF-8">
+    <link href="/css/words_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -15,11 +18,29 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    margin: 0px;
+    padding: 0px;
    }
 </style>
 
+<div class="header">
+    <?php
+    if(isset($_SESSION['name'])) {
+    echo '<a href="https://dribbble.com/" class="headText">'  .$_SESSION['name']. '</a>';
+    }
+    else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
+    ?>
+    
+    
+    <a href="###" class="headText">Достижения</a>
+    <a href="###" class="headText">Тестирование</a>
+    <a href="words.php" class="headText">Изучить</a>
+    <a href="main.php" class="headText">Главная </a>
+</div>
+
 <div class="wrapper">
     <div class="Block">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/christmas-penguin.png">
     <span class="text">Животные</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
@@ -27,6 +48,7 @@
     </div>
     
     <div class="Block">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/businessman.png">
     <span class="text">Профессии</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
@@ -34,6 +56,7 @@
     </div>
     
     <div class="Block">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/parent-guardian.png">
     <span class="text">Семья</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
@@ -41,6 +64,7 @@
     </div>
     
     <div class="Block">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/ingredients.png">
     <span class="text">Еда</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
@@ -50,6 +74,7 @@
     
     <div class="wrapper2">
     <div class="Block">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/bus.png">
     <span class="text">Транспорт</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
@@ -57,6 +82,7 @@
     </div>
     
     <div class="Block">
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/suitcase.png">
     <span class="text">Путешествия</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
@@ -64,14 +90,16 @@
     </div>
     
     <div class="Block">
-    <span class="text">Семья</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/theme-park.png">
+    <span class="text">Развлечения</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>
     </div>
     
     <div class="Block">
-    <span class="text">Еда</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/tennis.png">
+    <span class="text">Спорт</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>
