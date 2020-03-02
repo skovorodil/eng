@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Family Language - Изучить</title>
+    <title>Family Language</title>
     <meta charset="UTF-8">
     <link href="/css/words_style.css" rel="stylesheet" type="text/css">
 </head>
@@ -43,7 +43,7 @@
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/christmas-penguin.png">
     <span class="text">Животные</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
+        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='learn.php'">
             </form>
     </div>
     

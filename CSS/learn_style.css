@@ -1,0 +1,86 @@
+   .header {
+       background: #fff;
+       width: 100%;
+       height: 65px;
+       margin: 0px;
+       padding: 0px;
+   }
+   .welcomeBlock {
+    width: 600px; /* Ширина элемента в пикселах */
+    height: 600px;
+    margin: auto; /* Выравниваем по центру */
+    margin-top: 85px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+   }
+   .word {
+  width: 100%;
+  display: block;
+  padding-top: 30px;
+  font-family: Arial;
+  font-size: 75px;
+  text-align: center;
+  color: #C3BCBC;
+   }
+   .tr {
+  width: 100%;
+  display: block;
+  font-family: Arial;
+  font-size: 75px;
+  text-align: center;
+  color: #C3BCBC;
+   }
+   .translate {
+  width: 100%;
+  display: block;
+  font-family: Arial;
+  font-size: 75px;
+  text-align: center;
+  color: #C3BCBC;
+   }
+   .headText {
+      font-family: Arial; 
+      font-size: 18px;
+      color: #F8ADAD;
+      vertical-align: middle;
+      line-height: 65px;  
+      float: right;
+      margin-right:15px;
+      text-decoration: none;
+      -webkit-transition: all 0.3s;
+   }
+   .headText:hover {
+       color: #F38181;
+   }
+   .login100-form-btn {
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  width: 50%;
+  height: 45px;
+  border-radius: 10px;
+  background: #F38181;
+  font-family: Arial;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+    }
+    .login100-form-btn:hover {
+         background: #F8ADAD;
+    }
+    
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}

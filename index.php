@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language - Авторизация</title>
+	<title>Family Language</title>
 	<meta charset="UTF-8">
 	<link href="/css/main.css" rel="stylesheet" />
 

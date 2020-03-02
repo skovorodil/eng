@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Family Language - Регистрация</title>
+  <title>Family Language</title>
   <meta charset="UTF-8">
     <link href="/css/main.css" rel="stylesheet" />
   <style>
@@ -26,22 +26,22 @@
           <div class="form-button">
           <span class="login-text">Эл. адрес</span>
           <div class="wrap-input100 validate-input">
-            <input class="input100" type="text" name="email" type="email">
+            <input class="input100" type="text" id="regEmail" name="email" type="email">
           </div>
           
       <span class="login-text">Имя</span>
           <div class="wrap-input100 validate-input">
-            <input class="input100" type="text" name="name">
+            <input class="input100" type="text" id="regName" name="name">
           </div>
 
           <span class="login-text">Пароль</span>
           <div class="wrap-input100 validate-input">
-            <input class="input100" type="password" name="pass">
+            <input class="input100" type="password" id="regPas" name="pass">
           </div>
           </div>
 
           <div class="container-login100-form-btn">
-            <input type="submit" class="login100-form-btn" name="reg" id="reg" value="Зарегистрироваться">
+            <input type="submit" class="login100-form-btn" name="reg" id="regButton" value="Зарегистрироваться">
             <span style="color:red; margin-top: 20px;" id="simple"></span>
           </div>
     </form>

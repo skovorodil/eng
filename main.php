@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Family Language - Главная</title>
+    <title>Family Language</title>
     <meta charset="UTF-8">
     <link href="/css/main_style.css" rel="stylesheet" type="text/css">
 </head>
