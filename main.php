@@ -7,6 +7,7 @@
     <title>Family Language</title>
     <meta charset="UTF-8">
     <link href="/css/main_style.css" rel="stylesheet" type="text/css">
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -24,6 +25,7 @@
 </style>
 
 <div class="header">
+    <a href="logout.php" class="headText">Выйти </a>
     <?php
     if(isset($_SESSION['name'])) {
     echo '<a href="https://dribbble.com/" class="headText">'  .$_SESSION['name']. '</a>';
@@ -31,11 +33,12 @@
     else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
     ?>
     
-    
+    <span class = "logoTitle">Family Language</span>
     <a href="###" class="headText">Достижения</a>
     <a href="###" class="headText">Тестирование</a>
     <a href="words.php" class="headText">Изучить</a>
     <a href="main.php" class="headText">Главная </a>
+            
 </div>
 
 <div class="wrapper">
