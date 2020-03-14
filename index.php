@@ -16,6 +16,12 @@ if (mysqli_connect_errno()) {
 }
 ?>
 
+<?php 
+if(isset($_SESSION['name'])) {
+    echo ' <meta http-equiv="refresh" content="0;URL=main.php">';
+}
+?>
+
 <body style="background-color: #fff;">
 
 	<div class="limiter">
@@ -82,9 +88,9 @@ if (mysqli_connect_errno()) {
                 }
                 if($email == $dbemail && $pass == $dbpass)
                 {
-                        echo ' <meta http-equiv="refresh" content="0;URL=main.php">';
                         $_SESSION['name'] = $username;
                         $_SESSION['id'] = $userid;
+                        echo ' <meta http-equiv="refresh" content="0;URL=main.php">';
                 }
                 
             } else {

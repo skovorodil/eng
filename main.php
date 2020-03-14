@@ -28,7 +28,7 @@
     <a href="logout.php" class="headText">Выйти </a>
     <?php
     if(isset($_SESSION['name'])) {
-    echo '<a href="https://dribbble.com/" class="headText">'  .$_SESSION['name']. '</a>';
+    echo '<a href="profile.php" class="headText">'  .$_SESSION['name']. '</a>';
     }
     else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
     ?>
