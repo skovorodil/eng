@@ -25,18 +25,18 @@
 </style>
 
 <div class="header">
-    <a href="logout.php" class="headText">Выйти </a>
+    <a href="logout.php" class="headText" id="exitMenu">Выйти </a>
     <?php
     if(isset($_SESSION['name'])) {
-    echo '<a href="profile.php" class="headText">'  .$_SESSION['name']. '</a>';
+    echo '<a href="profile.php" class="headText" id="nameMenu">'  .$_SESSION['name']. '</a>';
     }
     else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
     ?>
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText">Достижения</a>
-    <a href="###" class="headText">Тестирование</a>
-    <a href="words.php" class="headText">Изучить</a>
-    <a href="main.php" class="headText">Главная </a>
+    <a href="###" class="headText" id="achievMenu">Достижения</a>
+    <a href="###" class="headText" id="testMenu">Тестирование</a>
+    <a href="words.php" class="headText" id="learnMenu">Изучить</a>
+    <a href="main.php" class="headText" id="mainMenu">Главная </a>
 </div>
 
 

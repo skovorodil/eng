@@ -33,6 +33,11 @@
           <div class="wrap-input100 validate-input">
             <input class="input100" type="text" id="regName" name="name">
           </div>
+          
+      <span class="login-text">Телефон</span>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" type="text" id="regPhone" name="phone">
+          </div>
 
           <span class="login-text">Пароль</span>
           <div class="wrap-input100 validate-input">
@@ -60,17 +65,18 @@ if (mysqli_connect_errno()) {
     
     if(isset($_POST["reg"])){
         
-        if(!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['pass'])) {
+        if(!empty($_POST['email']) && !empty($_POST['name']) && !empty($_POST['pass']) && !empty($_POST['phone'])) {
             $email=htmlspecialchars($_POST['email']);
             $name=htmlspecialchars($_POST['name']);
+            $phone=htmlspecialchars($_POST['phone']);
             $pass=htmlspecialchars($_POST['pass']);
             $query=mysqli_query($link, "SELECT * FROM user WHERE user_name='".$name."'");
             $numrows=mysqli_num_rows($query);
             if($numrows==0)
             {
                 $sql="INSERT INTO user
-                (user_name, user_mail, user_pas)
-                VALUES('$name','$email', '$pass')";
+                (user_name, user_mail, user_pas, user_phone)
+                VALUES('$name','$email', '$pass', '$phone')";
                 $result=mysqli_query($link,$sql);
                 if($result){
                     echo '<meta http-equiv="refresh" content="0;URL=welcome.php">';

@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-	<link href="/css/main.css" rel="stylesheet" />
+  <title>Family Language</title>
+  <meta charset="UTF-8">
+  <link href="/css/main.css" rel="stylesheet" />
 
 </head>
 <?php
@@ -24,33 +24,33 @@ if(isset($_SESSION['name'])) {
 
 <body style="background-color: #fff;">
 
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post">
-					<span class="login100-form-title p-b-43">
-						Вход
-					</span>
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form" method="post">
+          <span class="login100-form-title p-b-43">
+            Вход
+          </span>
 
           <div class="form-button">
           <span class="login-text">Эл. адрес</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" name="user_mail" id="email" type="email">
-					</div>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" name="user_mail" id="email" type="email">
+          </div>
 
           <span class="login-text">Пароль</span>
-					<div class="wrap-input100 validate-input">
-						<input class="input100" name="user_pas" id="pas" type="password">
-					</div>
+          <div class="wrap-input100 validate-input">
+            <input class="input100" name="user_pas" id="pas" type="password">
+          </div>
 
           </div>
          
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="login" name="login">
-							Авторизоваться
-						</button>
-					</div>
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" id="login" name="login">
+              Авторизоваться
+            </button>
+          </div>
 
           <span class="ili">Или</span>
 
@@ -62,14 +62,14 @@ if(isset($_SESSION['name'])) {
                      <span style="color:red; margin-top: 20px;" id="simple"></span>
             
           </div>
-				</form>
-				<div class="login100-more" style="background-image: url('img/loginBack.png');">
-				    <img class="logo" src="img/logo.png">
-				</div>
-			</div>
-		</div>
-	</div>
-	
+        </form>
+        <div class="login100-more" style="background-image: url('img/loginBack.png');">
+            <img class="logo" src="img/logo.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  
 <?php
     if(isset($_POST["login"])){
         if(!empty($_POST['user_mail']) && !empty($_POST['user_pas'])) {
@@ -90,7 +90,12 @@ if(isset($_SESSION['name'])) {
                 {
                         $_SESSION['name'] = $username;
                         $_SESSION['id'] = $userid;
-                        echo ' <meta http-equiv="refresh" content="0;URL=main.php">';
+                        if ($userid == 1) { 
+                        echo ' <meta http-equiv="refresh" content="0;URL=admin.php">';
+                        }
+                        else {
+                        echo ' <meta http-equiv="refresh" content="0;URL=main.php">';  
+                        }
                 }
                 
             } else {

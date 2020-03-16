@@ -12,10 +12,10 @@ if (mysqli_connect_errno()) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-	<link href="/css/profile_style.css" rel="stylesheet" type="text/css">
-	<link href="/css/header.css" rel="stylesheet" type="text/css">
+    <title>Family Language</title>
+    <meta charset="UTF-8">
+    <link href="/css/profile_style.css" rel="stylesheet" type="text/css">
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -33,19 +33,19 @@ if (mysqli_connect_errno()) {
 </style>
 
 <div class="header">
-    <a href="logout.php" class="headText">Выйти </a>
+    <a href="logout.php" class="headText" id="exitMenu">Выйти </a>
     <?php
     if(isset($_SESSION['name'])) {
-    echo '<a href="profile.php" class="headText">'  .$_SESSION['name']. '</a>';
+    echo '<a href="profile.php" id="nameMenu" class="headText">'  .$_SESSION['name']. '</a>';
     }
     else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
     ?>
     
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText">Достижения</a>
-    <a href="###" class="headText">Тестирование</a>
-    <a href="words.php" class="headText">Изучить</a>
-    <a href="main.php" class="headText">Главная </a>
+    <a href="###" class="headText" id="achievMenu">Достижения</a>
+    <a href="###" class="headText" id="testMenu">Тестирование</a>
+    <a href="words.php" class="headText" id="learnMenu">Изучить</a>
+    <a href="main.php" class="headText" id="mainMenu">Главная </a>
             
 </div>
 
@@ -64,8 +64,8 @@ if (mysqli_connect_errno()) {
     if(isset($_SESSION['id'])) {
         $query=mysqli_query($link, "select * from user where id_user = '".$_SESSION['id']."'");
         while ($result = mysqli_fetch_array($query)) {
-    echo '<p class="cont"> email: ' .$result['user_mail']. '</p>';
-    echo '<p class="cont"> Телефон: ' .$result['user_phone']. '</p>';
+    echo '<p class="cont" id="emailID"> email: ' .$result['user_mail']. '</p>';
+    echo '<p class="cont" id="phoneID"> Телефон: ' .$result['user_phone']. '</p>';
   }
     }
     else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
@@ -92,19 +92,19 @@ if (mysqli_connect_errno()) {
             
             <p class="textInput">Старый пароль</p>
             <div class="wrap-input100 validate-input">
-                <input class="input100" type="text" name="oldPas" id="oldPas">
+                <input class="input100" type="password" name="oldPas" id="oldPas">
             </div>
             
             <p class="textInput">Новый пароль</p>
             <div class="wrap-input100 validate-input">
-                <input class="input100" type="text" name="newPas" id="newPas">
+                <input class="input100" type="password" name="newPas" id="newPas">
             </div>
             
             <div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="change" name="change">
-							Изменить
-						</button>
-					</div>
+                        <button class="login100-form-btn" id="change" name="change">
+                            Изменить
+                        </button>
+                    </div>
         </form>
     </div>
     </div>
@@ -176,7 +176,7 @@ if (mysqli_connect_errno()) {
                 $oldPas = htmlspecialchars($_POST['oldPas']);
                 
                 $queryPas=mysqli_query($link, "select * from user where id_user = '".$_SESSION['id']."'");
-                  while ($result4 = mysqli_fetch_array($query)) {
+                  while ($result4 = mysqli_fetch_array($queryPas)) {
                   if ($result4['user_pas'] == $oldPas) {
                      $sql4="UPDATE user SET user_pas='$newPas' WHERE id_user='{$_SESSION['id']}'";
                      $result5=mysqli_query($link,$sql4);

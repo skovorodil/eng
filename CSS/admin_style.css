@@ -1,77 +1,23 @@
-.icon {
-    margin-top:15px;
-    margin-left:15px;
-}
-.name {
-  width: 100%;
-  margin-top: 0px;
-  padding-top:0px;
-  display: block;
-  font-family: Arial;
-  font-size: 45px;
-  text-align: left;
-  color: #C3BCBC;
-  margin-left: 35px;
-  margin-bottom:0px;
-  padding-bottom:0px;
-   }
-.student {
-  width: 100%;
-  margin-top: 0px;
-  padding-top:0px;
-  display: block;
-  font-family: Arial;
-  font-size: 20px;
-  text-align: left;
-  color: #C3BCBC;
-  margin-left: 35px;
-  margin-bottom:0px;
-  padding-bottom:0px;
-}
-.contacts {
-  width: 100%;
-  margin-top: 40px;
-  padding-top:0px;
-  display: block;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: left;
-  color: #C3BCBC;
-  margin-left: 35px;
-  margin-bottom:0px;
-  padding-bottom:0px;  
-}
-.cont {
-  width: 100%;
-  margin-top: 10px;
-  padding-top:0px;
-  display: block;
-  font-family: Arial;
-  font-size: 25px;
-  text-align: left;
-  color: #C3BCBC;
-  margin-left: 35px;
-  margin-bottom:0px;
-  padding-bottom:0px;   
-}
-   .wrapper { 
-     padding-top:25px;
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-   grid-template-columns: 450px 800px;
-   grid-column-gap: 60px;
-   justify-content: center;
+.wrapper { 
+  padding-top:25px;
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: 450px 800px;
+  grid-column-gap: 60px;
+  justify-content: center;
    
 } 
-   .profile {
-    margin-top: 130px;
-    background: #fff;
-    border-radius: 15px 15px 15px 15px;
-    height: 450px;
-    width: 450px;
-    float: left;
+.profile {
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 15px 15px 15px 15px;
+  height: 650px;
+  width: 450px;
+  float: left;
    }
+.forma {
+    margin-left: 90px;
+}
 .settings {
   margin-top: 5px;
   background: #fff;
@@ -80,6 +26,16 @@
   width: 800px;
   height: 700px;
    }
+.ttt {
+  width: 100%;
+  display: block;
+  font-family: Arial;
+  font-size: 23px;
+  text-align: left;
+  color: #C3BCBC;
+  margin-bottom:0px;
+  padding-bottom:0px; 
+}
 .text {
   width: 100%;
   display: block;
@@ -184,7 +140,7 @@ input.input100 {
   transition: all 0.4s;
 }
 button {
-  outline: none !important;
-  border: none;
-  background: transparent;
+	outline: none !important;
+	border: none;
+	background: transparent;
 }
