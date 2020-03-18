@@ -48,14 +48,30 @@ if (mysqli_connect_errno()) {
 }
 ?>
 <?php
-            $query =mysqli_query($link, "SELECT * FROM words_animal ORDER BY RAND() LIMIT 1");
-            while($row=mysqli_fetch_assoc($query))
+
+
+            $query1=mysqli_query($link, "select * from user where id_user = '".$_SESSION['id']."'");
+            while($row=mysqli_fetch_assoc($query1))
+                {
+                    $dbprogress=$row['animal_progress'];
+                    $query2=mysqli_query($link, "select * from words_animal");
+                    $wordscount = mysqli_num_rows($query2);
+                    if($wordscount==$dbprogress){
+                    $queryNull =mysqli_query($link, "UPDATE user SET animal_progress=1 WHERE id_user='{$_SESSION['id']}'");
+                    $dbprogress=1;
+                    }
+                    else {
+                    $dbprogress=$dbprogress+1;
+                    }
+                }
+            $query3 =mysqli_query($link, "SELECT * FROM words_animal where id_word='$dbprogress'");
+            while($row=mysqli_fetch_assoc($query3))
                 {
                     $dbword=$row['word'];
                     $dbtr=$row['tr'];
                     $dbtranslate=$row['translate'];
                 }
-      
+            $query4 =mysqli_query($link, "UPDATE user SET animal_progress='$dbprogress' WHERE id_user='{$_SESSION['id']}'");
     ?>
 
     <div class="welcomeBlock">
@@ -66,7 +82,7 @@ if (mysqli_connect_errno()) {
     ?> 
    
     <form>
-        <input type="button" class="login100-form-btn" value="Далее" onclick=" location.href='learn.php'">
+        <input type="button" class="login100-form-btn" value="Изучено" onclick=" location.href='learn.php'">
             </form>
     </div>
 

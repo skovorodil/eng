@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Family Language</title>
-    <meta charset="UTF-8">
-    <link href="/css/words_style.css" rel="stylesheet" type="text/css">
-    <link href="/css/header.css" rel="stylesheet" type="text/css">
+	<title>Family Language</title>
+	<meta charset="UTF-8">
+	<link href="/css/words2_style.css" rel="stylesheet" type="text/css">
+	<link href="/css/header.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -42,32 +42,24 @@
 
 <div class="wrapper">
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/christmas-penguin.png">
-    <span class="text">Животные</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/standing-man.png">
+    <span class="text">Человек</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='learn.php'">
             </form>
     </div>
     
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/businessman.png">
-    <span class="text">Профессии</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/test-tube.png">
+    <span class="text">Наука</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>
     </div>
     
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/parent-guardian.png">
-    <span class="text">Семья</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
-            </form>
-    </div>
-    
-    <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/ingredients.png">
-    <span class="text">Еда</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/city.png">
+    <span class="text">Город</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>
@@ -76,32 +68,24 @@
     
     <div class="wrapper2">
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/bus.png">
-    <span class="text">Транспорт</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/country.png">
+    <span class="text">Страны</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
             </form>
     </div>
     
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/suitcase.png">
-    <span class="text">Путешествия</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/home.png">
+    <span class="text">Дом</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>
     </div>
     
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/theme-park.png">
-    <span class="text">Развлечения</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
-            </form>
-    </div>
-    
-    <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/tennis.png">
-    <span class="text">Спорт</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/social-network.png">
+    <span class="text">Общество</span>
     <form>
         <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
             </form>
@@ -110,7 +94,7 @@
     
     <div class="page">
         <form>
-        <input type="button" class="login100-form-btn btn" class="btn" value="Далее" onclick=" location.href='words2.php'">
+        <input type="button" class="login100-form-btn btn" class="btn" value="Назад" onclick=" location.href='words.php'">
             </form>
     </div>
 

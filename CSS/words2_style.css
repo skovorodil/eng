@@ -8,16 +8,16 @@
    .wrapper { 
      margin-top:130px;
     display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-   grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: repeat(3, 1fr); 
+   grid-template-columns: 300px 300px 300px;
    grid-column-gap: 25px;
    justify-content: center;
 } 
 .wrapper2 { 
      margin-top:50px;
     display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-   grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: repeat(3, 1fr); 
+   grid-template-columns: 300px 300px 300px;
    grid-column-gap: 25px;
    justify-content: center;
 }

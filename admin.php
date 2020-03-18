@@ -97,6 +97,37 @@ if (mysqli_connect_errno()) {
 
         <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
         <label for="contactChoice8">Спорт</label>
+        
+        <br>
+
+        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <label for="contactChoice8">Человек</label>
+        
+        <br>
+
+        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <label for="contactChoice8">Наука</label>
+        
+        <br>
+
+        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <label for="contactChoice8">Город</label>
+        
+        <br>
+
+        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <label for="contactChoice8">Страны</label>
+        
+        <br>
+
+        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <label for="contactChoice8">Дом</label>
+        
+        
+        <br>
+
+        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <label for="contactChoice8">Общество</label>
         </form>
     </div>
     
