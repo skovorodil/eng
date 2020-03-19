@@ -53,7 +53,7 @@
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/businessman.png">
     <span class="text">Профессии</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words/profession.php'">
             </form>
     </div>
     
