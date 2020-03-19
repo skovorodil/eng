@@ -12,7 +12,7 @@
 
 <style>
     body {
-    background-image: url(img/learnBack.png); 
+    background-image: url(https://eng-slang.000webhostapp.com/img/learnBack.png); 
     background-color: #F1CE8F;
     background-size: 100%;
     background-repeat: no-repeat;

@@ -45,7 +45,7 @@
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/christmas-penguin.png">
     <span class="text">Животные</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='learn.php'">
+        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words/animal.php'">
             </form>
     </div>
     
