@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-	<link href="/css/words2_style.css" rel="stylesheet" type="text/css">
-	<link href="/css/header.css" rel="stylesheet" type="text/css">
+    <title>Family Language</title>
+    <meta charset="UTF-8">
+    <link href="/css/words2_style.css" rel="stylesheet" type="text/css">
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -34,7 +34,7 @@
     ?>
     
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText">Достижения</a>
+    <a href="progress.php" class="headText">Достижения</a>
     <a href="###" class="headText">Тестирование</a>
     <a href="words.php" class="headText">Изучить</a>
     <a href="main.php" class="headText">Главная </a>

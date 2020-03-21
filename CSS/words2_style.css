@@ -82,3 +82,8 @@ textarea {
 textarea:focus, input:focus {
   border-color: transparent !important;
 }
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}

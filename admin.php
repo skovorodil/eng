@@ -12,11 +12,11 @@ if (mysqli_connect_errno()) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-	<link href="/css/admin_style.css" rel="stylesheet" type="text/css">
-	<link href="/css/header.css" rel="stylesheet" type="text/css">
-	<link href="/css/radio_style.css" rel="stylesheet" type="text/css">
+    <title>Family Language</title>
+    <meta charset="UTF-8">
+    <link href="/css/admin_style.css" rel="stylesheet" type="text/css">
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
+    <link href="/css/radio_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -49,7 +49,7 @@ if (mysqli_connect_errno()) {
     ?>
     
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText">Достижения</a>
+    <a href="progress.php" class="headText">Достижения</a>
     <a href="###" class="headText">Тестирование</a>
     <a href="words.php" class="headText">Изучить</a>
     <a href="main.php" class="headText">Главная </a>
@@ -58,75 +58,75 @@ if (mysqli_connect_errno()) {
 
 <div class="wrapper">
     <div class="profile">
-        <form class="forma">
+        <form class="forma" method="post">
         <p class="ttt">Выберете категорию слов</p>
-        <input class="radio" type="radio" id="contactChoice1" name="contact" value="email">
-        <label for="contactChoice1">Животные</label>
+        <input class="radio" name="animal" type="checkbox" value="animal">
+        <label for="animal">Животные</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice2" name="contact" value="phone">
+        <input class="radio" type="checkbox" id="words" name="words" value="profession">
         <label for="contactChoice2">Профессии</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice3" name="contact" value="mail">
+        <input class="radio" type="checkbox" id="contactChoice3" name="words" value="mail">
         <label for="contactChoice3">Семья</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice4" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice4" name="words" value="mail">
         <label for="contactChoice4">Еда</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice5" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice5" name="words" value="mail">
         <label for="contactChoice5">Транспорт</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice6" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice6" name="words" value="mail">
         <label for="contactChoice6">Путешествия</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice7" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice7" name="words" value="mail">
         <label for="contactChoice7">Развлечения</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Спорт</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Человек</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Наука</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Город</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Страны</label>
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Дом</label>
         
         
         <br>
 
-        <input class="radio" type="radio" id="contactChoice8" name="contact" value="mail">
+        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
         <label for="contactChoice8">Общество</label>
         </form>
     </div>
@@ -150,13 +150,21 @@ if (mysqli_connect_errno()) {
                 <input class="input100" type="text" name="addTranlate" id="addTranslate">
             </div>
             <div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="add" name="add">
-							Добавить
-						</button>
-					</div>
+                        <button class="login100-form-btn" id="add" name="add">
+                            Добавить
+                        </button>
+                    </div>
         </form>
     </div>
     
+<?php
+
+if(isset($_POST["add"]) && isset($_POST["animal"])) {
+    echo '<script language="javascript">';
+    echo 'alert("Ошибка")';
+    echo '</script>';
+}
+?>
 
 
 

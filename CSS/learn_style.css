@@ -1,7 +1,7 @@
    .welcomeBlock {
-    width: 600px; /* Ширина элемента в пикселах */
+    width: 600px; 
     height: 600px;
-    margin: auto; /* Выравниваем по центру */
+    margin: auto; 
     margin-top: 85px;
     background: #fff;
     border-radius: 15px 15px 15px 15px;

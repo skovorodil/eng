@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Family Language</title>
-    <meta charset="UTF-8">
-        <link href="/css/learn_style.css" rel="stylesheet" type="text/css">
-        <link href="/css/header.css" rel="stylesheet" type="text/css">
+	<title>Family Language</title>
+	<meta charset="UTF-8">
+		<link href="css/learn_style.css" rel="stylesheet" type="text/css">
+		<link href="css/header.css" rel="stylesheet" type="text/css">
 </head>
 
 <style>
@@ -25,18 +25,18 @@
 </style>
 
 <div class="header">
-    <a href="/logout.php" class="headText" id="exitMenu">Выйти </a>
+    <a href="logout.php" class="headText" id="exitMenu">Выйти </a>
     <?php
     if(isset($_SESSION['name'])) {
-    echo '<a href="/profile.php" class="headText" id="nameMenu">'  .$_SESSION['name']. '</a>';
+    echo '<a href="profile.php" class="headText" id="nameMenu">'  .$_SESSION['name']. '</a>';
     }
-    else  echo ' <meta http-equiv="refresh" content="0;URL=/index.php">';
+    else  echo ' <meta http-equiv="refresh" content="0;URL=index.php">';
     ?>
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText" id="achievMenu">Достижения</a>
+    <a href="progress.php" class="headText" id="achievMenu">Достижения</a>
     <a href="###" class="headText" id="testMenu">Тестирование</a>
-    <a href="/words.php" class="headText" id="learnMenu">Изучить</a>
-    <a href="/main.php" class="headText" id="mainMenu">Главная </a>
+    <a href="words.php" class="headText" id="learnMenu">Изучить</a>
+    <a href="main.php" class="headText" id="mainMenu">Главная </a>
 </div>
 
 
@@ -49,29 +49,46 @@ if (mysqli_connect_errno()) {
 ?>
 <?php
 
+if(isset($_SESSION['words_type']))  {
+    $WT = $_SESSION['words_type'];
+    if ($WT == 1) {
+    $words_type = 'words_animal';
+    $words_progress = 'animal_progress';
+    }
+    if ($WT == 2) {
+    $words_type = 'words_profession';
+    $words_progress = 'profession_progress';
+    }
+    if ($WT == 3) {
+    $words_type = 'words_family';
+    $words_progress = 'family_progress';
+    }
+}
+else  echo ' <meta http-equiv="refresh" content="0;URL=main.php">';
+
 
             $query1=mysqli_query($link, "select * from user where id_user = '".$_SESSION['id']."'");
             while($row=mysqli_fetch_assoc($query1))
                 {
-                    $dbprogress=$row['animal_progress'];
-                    $query2=mysqli_query($link, "select * from words_animal");
+                    $dbprogress=$row[$words_progress];
+                    $query2=mysqli_query($link, "select * from $words_type");
                     $wordscount = mysqli_num_rows($query2);
                     if($wordscount==$dbprogress){
-                    $queryNull =mysqli_query($link, "UPDATE user SET animal_progress=1 WHERE id_user='{$_SESSION['id']}'");
+                    $queryNull =mysqli_query($link, "UPDATE user SET $words_progress=1 WHERE id_user='{$_SESSION['id']}'");
                     $dbprogress=1;
                     }
                     else {
                     $dbprogress=$dbprogress+1;
                     }
                 }
-            $query3 =mysqli_query($link, "SELECT * FROM words_animal where id_word='$dbprogress'");
+            $query3 =mysqli_query($link, "SELECT * FROM $words_type where id_word='$dbprogress'");
             while($row=mysqli_fetch_assoc($query3))
                 {
                     $dbword=$row['word'];
                     $dbtr=$row['tr'];
                     $dbtranslate=$row['translate'];
                 }
-            $query4 =mysqli_query($link, "UPDATE user SET animal_progress='$dbprogress' WHERE id_user='{$_SESSION['id']}'");
+            $query4 =mysqli_query($link, "UPDATE user SET $words_progress='$dbprogress' WHERE id_user='{$_SESSION['id']}'");
     ?>
 
     <div class="welcomeBlock">
@@ -82,7 +99,7 @@ if (mysqli_connect_errno()) {
     ?> 
    
     <form>
-        <input type="button" class="login100-form-btn" value="Изучено" onclick=" location.href='animal.php'">
+        <input type="button" class="login100-form-btn" value="Изучено" onclick=" location.href='learn.php'">
             </form>
     </div>
 

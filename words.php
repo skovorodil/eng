@@ -34,7 +34,7 @@
     ?>
     
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText">Достижения</a>
+    <a href="progress.php" class="headText">Достижения</a>
     <a href="###" class="headText">Тестирование</a>
     <a href="words.php" class="headText">Изучить</a>
     <a href="main.php" class="headText">Главная </a>
@@ -44,24 +44,36 @@
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/christmas-penguin.png">
     <span class="text">Животные</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words/animal.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="animal" name="animal">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/businessman.png">
     <span class="text">Профессии</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words/profession.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="profession" name="profession">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/parent-guardian.png">
     <span class="text">Семья</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="family" name="family">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
@@ -79,7 +91,7 @@
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/bus.png">
     <span class="text">Транспорт</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
+        <input type="button" name="animal" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
             </form>
     </div>
     
@@ -121,6 +133,22 @@ $link = @new mysqli('localhost', 'id12319296_root', '123456789', 'id12319296_eng
 if (mysqli_connect_errno()) {
   echo "Подключение невозможно: ".mysqli_connect_error();
 }
+?>
+
+<?php 
+
+    if(isset($_POST["animal"])){
+            $_SESSION['words_type'] = 1;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["profession"])){
+            $_SESSION['words_type'] = 2;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["family"])){
+            $_SESSION['words_type'] = 3;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
 ?>
 
 

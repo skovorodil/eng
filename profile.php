@@ -42,7 +42,7 @@ if (mysqli_connect_errno()) {
     ?>
     
     <span class = "logoTitle">Family Language</span>
-    <a href="###" class="headText" id="achievMenu">Достижения</a>
+    <a href="progress.php" class="headText" id="achievMenu">Достижения</a>
     <a href="###" class="headText" id="testMenu">Тестирование</a>
     <a href="words.php" class="headText" id="learnMenu">Изучить</a>
     <a href="main.php" class="headText" id="mainMenu">Главная </a>
