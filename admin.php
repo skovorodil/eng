@@ -12,11 +12,11 @@ if (mysqli_connect_errno()) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Family Language</title>
-    <meta charset="UTF-8">
-    <link href="/css/admin_style.css" rel="stylesheet" type="text/css">
-    <link href="/css/header.css" rel="stylesheet" type="text/css">
-    <link href="/css/radio_style.css" rel="stylesheet" type="text/css">
+	<title>Family Language</title>
+	<meta charset="UTF-8">
+	<link href="/css/admin_style.css" rel="stylesheet" type="text/css">
+	<link href="/css/header.css" rel="stylesheet" type="text/css">
+	<link href="/css/radio_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -150,10 +150,10 @@ if (mysqli_connect_errno()) {
                 <input class="input100" type="text" name="addTranlate" id="addTranslate">
             </div>
             <div class="container-login100-form-btn">
-                        <button class="login100-form-btn" id="add" name="add">
-                            Добавить
-                        </button>
-                    </div>
+						<button class="login100-form-btn" id="add" name="add">
+							Добавить
+						</button>
+					</div>
         </form>
     </div>
     

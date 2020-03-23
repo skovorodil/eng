@@ -12,10 +12,10 @@ if (mysqli_connect_errno()) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-	<link href="/css/progress_style.css" rel="stylesheet" type="text/css">
-	<link href="/css/header.css" rel="stylesheet" type="text/css">
+    <title>Family Language</title>
+    <meta charset="UTF-8">
+    <link href="/css/progress_style.css" rel="stylesheet" type="text/css">
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -61,18 +61,34 @@ if (mysqli_connect_errno()) {
     echo '<p class="pw"> Животные: ' .$result['animal_progress']. ' слов</p>';
     echo '<p class="pw" > Профессии: ' .$result['profession_progress']. ' слов</p>';
     echo '<p class="pw" > Семья: ' .$result['family_progress']. ' слов</p>';
+    echo '<p class="pw" > Еда: ' .$result['food_progress']. ' слов</p>';
+    echo '<p class="pw" > Транспорт: ' .$result['transport_progress']. ' слов</p>';
+    echo '<p class="pw" > Путешествия: ' .$result['travel_progress']. ' слов</p>';
+    echo '<p class="pw" > Развлечения: ' .$result['entertainment_progress']. ' слов</p>';
   }
     }
     ?>
             </div>
             
             <div class="second">   
-               <p class="pw">Спорт: 0 слов</p>
-               <p class="pw">Человек: 5 слов</p>
-               <p class="pw">Наука: 2 слов</p>
+               <?php
+    if(isset($_SESSION['id'])) {
+        $query=mysqli_query($link, "select * from user where id_user = '".$_SESSION['id']."'");
+        while ($result = mysqli_fetch_array($query)) {
+    echo '<p class="pw"> Спорт: ' .$result['sport_progress']. ' слов</p>';
+    echo '<p class="pw"> Человек: ' .$result['human_progress']. ' слов</p>';
+    echo '<p class="pw"> Наука: ' .$result['science_progress']. ' слов</p>';
+    echo '<p class="pw"> Город: ' .$result['city_progress']. ' слов</p>';
+    echo '<p class="pw"> Страны: ' .$result['country_progress']. ' слов</p>';
+    echo '<p class="pw"> Дом: ' .$result['house_progress']. ' слов</p>';
+    echo '<p class="pw"> Общество: ' .$result['society_progress']. ' слов</p>';
+  }
+    }
+    ?>
             </div>
         </div>
     </div>
+
     
     <div class="achiev">
         

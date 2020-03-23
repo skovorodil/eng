@@ -80,8 +80,12 @@
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/ingredients.png">
     <span class="text">Еда</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="food" name="food">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     </div>
@@ -90,32 +94,48 @@
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/bus.png">
     <span class="text">Транспорт</span>
-    <form>
-        <input type="button" name="animal" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="transport" name="transport">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/suitcase.png">
     <span class="text">Путешествия</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="travel" name="travel">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/theme-park.png">
     <span class="text">Развлечения</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="enter" name="enter">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/tennis.png">
     <span class="text">Спорт</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="sport" name="sport">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     </div>
@@ -147,6 +167,26 @@ if (mysqli_connect_errno()) {
         }
     if(isset($_POST["family"])){
             $_SESSION['words_type'] = 3;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["food"])){
+            $_SESSION['words_type'] = 4;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["transport"])){
+            $_SESSION['words_type'] = 5;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["travel"])){
+            $_SESSION['words_type'] = 6;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["enter"])){
+            $_SESSION['words_type'] = 7;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["sport"])){
+            $_SESSION['words_type'] = 8;
             echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
         }
 ?>

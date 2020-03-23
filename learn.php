@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Family Language</title>
-	<meta charset="UTF-8">
-		<link href="css/learn_style.css" rel="stylesheet" type="text/css">
-		<link href="css/header.css" rel="stylesheet" type="text/css">
+    <title>Family Language</title>
+    <meta charset="UTF-8">
+        <link href="css/learn_style.css" rel="stylesheet" type="text/css">
+        <link href="css/header.css" rel="stylesheet" type="text/css">
 </head>
 
 <style>
@@ -62,6 +62,50 @@ if(isset($_SESSION['words_type']))  {
     if ($WT == 3) {
     $words_type = 'words_family';
     $words_progress = 'family_progress';
+    }
+    if ($WT == 4) {
+    $words_type = 'words_food';
+    $words_progress = 'food_progress';
+    }
+    if ($WT == 5) {
+    $words_type = 'words_transport';
+    $words_progress = 'transport_progress';
+    }
+    if ($WT == 6) {
+    $words_type = 'words_travel';
+    $words_progress = 'travel_progress';
+    }
+    if ($WT == 7) {
+    $words_type = 'words_entertainment';
+    $words_progress = 'entertainment_progress';
+    }
+    if ($WT == 8) {
+    $words_type = 'words_sport';
+    $words_progress = 'sport_progress';
+    }
+    if ($WT == 9) {
+    $words_type = 'words_human';
+    $words_progress = 'human_progress';
+    }
+    if ($WT == 10) {
+    $words_type = 'words_science';
+    $words_progress = 'science_progress';
+    }
+    if ($WT == 11) {
+    $words_type = 'words_city';
+    $words_progress = 'city_progress';
+    }
+    if ($WT == 12) {
+    $words_type = 'words_country';
+    $words_progress = 'country_progress';
+    }
+    if ($WT == 13) {
+    $words_type = 'words_house';
+    $words_progress = 'house_progress';
+    }
+    if ($WT == 14) {
+    $words_type = 'words_society';
+    $words_progress = 'society_progress';
     }
 }
 else  echo ' <meta http-equiv="refresh" content="0;URL=main.php">';

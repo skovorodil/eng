@@ -44,24 +44,36 @@
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/standing-man.png">
     <span class="text">Человек</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='learn.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="human" name="human">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/test-tube.png">
     <span class="text">Наука</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="science" name="science">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/city.png">
     <span class="text">Город</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="city" name="city">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     </div>
@@ -70,24 +82,36 @@
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/country.png">
     <span class="text">Страны</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='words.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="country" name="country">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/home.png">
     <span class="text">Дом</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="house" name="house">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     
     <div class="Block">
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/social-network.png">
     <span class="text">Общество</span>
-    <form>
-        <input type="button" class="login100-form-btn" value="Изучить" onclick=" location.href='index.php'">
+    <form method="post">
+        <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="society" name="society">
+                            Изучить
+                        </button>
+                    </div>
             </form>
     </div>
     </div>
@@ -105,6 +129,33 @@ $link = @new mysqli('localhost', 'id12319296_root', '123456789', 'id12319296_eng
 if (mysqli_connect_errno()) {
   echo "Подключение невозможно: ".mysqli_connect_error();
 }
+?>
+<?php 
+
+    if(isset($_POST["human"])){
+            $_SESSION['words_type'] = 9;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["science"])){
+            $_SESSION['words_type'] = 10;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["city"])){
+            $_SESSION['words_type'] = 11;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["country"])){
+            $_SESSION['words_type'] = 12;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["house"])){
+            $_SESSION['words_type'] = 13;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
+    if(isset($_POST["society"])){
+            $_SESSION['words_type'] = 14;
+            echo ' <meta http-equiv="refresh" content="0;URL=learn.php">'; 
+        }
 ?>
 
 
