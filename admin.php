@@ -16,7 +16,6 @@ if (mysqli_connect_errno()) {
 	<meta charset="UTF-8">
 	<link href="/css/admin_style.css" rel="stylesheet" type="text/css">
 	<link href="/css/header.css" rel="stylesheet" type="text/css">
-	<link href="/css/radio_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <style>
@@ -57,84 +56,28 @@ if (mysqli_connect_errno()) {
 </div>
 
 <div class="wrapper">
-    <div class="profile">
-        <form class="forma" method="post">
-        <p class="ttt">Выберете категорию слов</p>
-        <input class="radio" name="animal" type="checkbox" value="animal">
-        <label for="animal">Животные</label>
-        
-        <br>
 
-        <input class="radio" type="checkbox" id="words" name="words" value="profession">
-        <label for="contactChoice2">Профессии</label>
-        
-        <br>
-
-        <input class="radio" type="checkbox" id="contactChoice3" name="words" value="mail">
-        <label for="contactChoice3">Семья</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice4" name="words" value="mail">
-        <label for="contactChoice4">Еда</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice5" name="words" value="mail">
-        <label for="contactChoice5">Транспорт</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice6" name="words" value="mail">
-        <label for="contactChoice6">Путешествия</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice7" name="words" value="mail">
-        <label for="contactChoice7">Развлечения</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Спорт</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Человек</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Наука</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Город</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Страны</label>
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Дом</label>
-        
-        
-        <br>
-
-        <input class="radio" type="radio" id="contactChoice8" name="words" value="mail">
-        <label for="contactChoice8">Общество</label>
-        </form>
-    </div>
-    
     <div class="settings">
         
         <p class="set">Добавить слова</p>
         <form class="settingForm" method="post">
+            <p class="ttt">Выберете категорию слов</p>
+    <select name="words">
+        <option value="animal">Животные</option>
+        <option value="prof">Профессии</option>
+        <option value="family">Семья</option>
+        <option value="food">Еда</option>
+        <option value="transport">Транспорт</option>
+        <option value="travel">Путешествия</option>
+        <option value="enter">Развлечения</option>
+        <option value="sport">Спорт</option>
+        <option value="human">Человек</option>
+        <option value="scien">Наука</option>
+        <option value="city">Город</option>
+        <option value="country">Страны</option>
+        <option value="home">Дом</option>
+        <option value="socie">Общество</option>
+    </select>
             <p class="textInput">Слово</p>
             <div class="wrap-input100 validate-input">
                 <input class="input100" type="text" name="addWord" id="addWord">
@@ -159,11 +102,65 @@ if (mysqli_connect_errno()) {
     
 <?php
 
-if(isset($_POST["add"]) && isset($_POST["animal"])) {
-    echo '<script language="javascript">';
-    echo 'alert("Ошибка")';
-    echo '</script>';
-}
+if(isset($_POST["add"])) {
+   if (($_POST['words'])=="animal") {
+       $table = "words_animal";
+   }
+   if (($_POST['words'])=="prof") {
+       $table = "words_profession";
+   }
+   if (($_POST['words'])=="family") {
+       $table = "words_family";
+   }
+   if (($_POST['words'])=="food") {
+       $table = "words_food";
+   }
+   if (($_POST['words'])=="transport") {
+       $table = "words_transport";
+   }
+   if (($_POST['words'])=="travel") {
+       $table = "words_travel";
+   }
+   if (($_POST['words'])=="enter") {
+       $table = "words_entertainment";
+   }
+   if (($_POST['words'])=="sport") {
+       $table = "words_sport";
+   }
+   if (($_POST['words'])=="human") {
+       $table = "words_human";
+   }
+   if (($_POST['words'])=="scien") {
+       $table = "words_science";
+   }
+   if (($_POST['words'])=="city") {
+       $table = "words_city";
+   }
+   if (($_POST['words'])=="country") {
+       $table = "words_country";
+   }
+   if (($_POST['words'])=="home") {
+       $table = "words_house";
+   }
+   if (($_POST['words'])=="socie") {
+       $table = "words_society";
+   }
+       if(!empty($_POST['addWord']) && !empty($_POST['addTr']) && !empty($_POST['addTranlate'])) {
+            $addWord=htmlspecialchars($_POST['addWord']);
+            $addTr=htmlspecialchars($_POST['addTr']);
+            $addTranlate=htmlspecialchars($_POST['addTranlate']);
+            $sql="INSERT INTO $table (word, tr, translate) VALUES('$addWord','$addTr', '$addTranlate')";
+                $result=mysqli_query($link,$sql);
+                if($result){
+                    echo 'Слово добавлено';
+                }
+                else {
+                   echo 'Произошла ошибка'; 
+                }
+            
+       }
+   }
+
 ?>
 
 
