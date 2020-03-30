@@ -35,7 +35,7 @@
     
     <span class = "logoTitle">Family Language</span>
     <a href="progress.php" class="headText">Достижения</a>
-    <a href="###" class="headText">Тестирование</a>
+    <a href="sections.php" class="headText">Тестирование</a>
     <a href="words.php" class="headText">Изучить</a>
     <a href="main.php" class="headText">Главная </a>
 </div>
@@ -116,8 +116,8 @@
     </div>
     
     <div class="Block">
-        <img class="icon" src="https://img.icons8.com/dusk/64/000000/theme-park.png">
-    <span class="text">Развлечения</span>
+        <img class="icon" src="https://img.icons8.com/dusk/64/000000/partly-cloudy-day.png">
+    <span class="text">Погода</span>
     <form method="post">
         <div class="container-login100-form-btn">
                         <button class="login100-form-btn" id="enter" name="enter">

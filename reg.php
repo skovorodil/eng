@@ -70,7 +70,7 @@ if (mysqli_connect_errno()) {
             $name=htmlspecialchars($_POST['name']);
             $phone=htmlspecialchars($_POST['phone']);
             $pass=htmlspecialchars($_POST['pass']);
-            $query=mysqli_query($link, "SELECT * FROM user WHERE user_name='".$name."'");
+            $query=mysqli_query($link, "SELECT * FROM user WHERE user_mail='".$email."'");
             $numrows=mysqli_num_rows($query);
             if($numrows==0)
             {
@@ -82,10 +82,11 @@ if (mysqli_connect_errno()) {
                     echo '<meta http-equiv="refresh" content="0;URL=welcome.php">';
                 } else {
                     echo  "Failed to insert data information!";
+                    echo mysqli_error($link);
                 }
             } else {
                 echo "<script>
-            document.getElementById('simple').innerHTML='Это имя пользователя уже используется, попробуйте другое';
+            document.getElementById('simple').innerHTML='Эта почта уже используется, попробуйте другую';
         </script>";
             }
         } else {

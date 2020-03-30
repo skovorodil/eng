@@ -35,7 +35,7 @@
     
     <span class = "logoTitle">Family Language</span>
     <a href="progress.php" class="headText" id="achievMenu">Достижения</a>
-    <a href="###" class="headText" id="testMenu">Тестирование</a>
+    <a href="sections.php" class="headText" id="testMenu">Тестирование</a>
     <a href="words.php" class="headText" id="learnMenu">Изучить</a>
     <a href="main.php" class="headText" id="mainMenu">Главная </a>
             
@@ -54,7 +54,7 @@
         <img class="icon" src="https://img.icons8.com/dusk/64/000000/test-passed.png">
     <span class="text">Пройдите тесты</span>
     <form>
-        <input type="button" class="login100-form-btn" value="Проверить знания" onclick=" location.href='index.php'">
+        <input type="button" class="login100-form-btn" value="Проверить знания" onclick=" location.href='sections.php'">
             </form>
     </div>
     

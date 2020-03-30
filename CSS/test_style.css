@@ -1,0 +1,107 @@
+   .welcomeBlock {
+    width: 600px;
+    height: 600px;
+    margin: auto; 
+    margin-top: 85px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+   }
+   .word {
+  width: 100%;
+  display: block;
+  padding-top: 30px;
+  font-family: Arial;
+  font-size: 75px;
+  text-align: center;
+  color: #C3BCBC;
+  margin-bottom:40px;
+   }
+   .verh {
+  width: 100%;
+  display: block;
+  padding-top: 30px;
+  font-family: Arial;
+  font-size: 40px;
+  text-align: center;
+  color: #C3BCBC;
+  margin-bottom:40px;    
+   }
+   .login100-form-btn {
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  width: 50%;
+  height: 45px;
+  border-radius: 10px;
+  background: #F38181;
+  font-family: Arial;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+    }
+    .login100-form-btn:hover {
+         background: #F8ADAD;
+    }
+    
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+.textInput {
+  width: 100%;
+  display: block;
+  font-family: Arial;
+  font-size: 23px;
+  text-align: left;
+  color: #C3BCBC;
+  margin-bottom:0px;
+  padding-bottom:0px;  
+}
+
+.wrap-input100 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  width: 50%;
+  height: 35px;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-left: 150px;
+  margin-bottom: 60px;
+}
+.input100 {
+  display: block;
+  width: 80%;
+  background: transparent;
+  font-family: Arial;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 26px;
+}
+
+input.input100 {
+  height: 100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}

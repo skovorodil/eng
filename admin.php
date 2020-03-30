@@ -49,7 +49,7 @@ if (mysqli_connect_errno()) {
     
     <span class = "logoTitle">Family Language</span>
     <a href="progress.php" class="headText">Достижения</a>
-    <a href="###" class="headText">Тестирование</a>
+    <a href="sections.php" class="headText">Тестирование</a>
     <a href="words.php" class="headText">Изучить</a>
     <a href="main.php" class="headText">Главная </a>
             
@@ -69,14 +69,14 @@ if (mysqli_connect_errno()) {
         <option value="food">Еда</option>
         <option value="transport">Транспорт</option>
         <option value="travel">Путешествия</option>
-        <option value="enter">Развлечения</option>
+        <option value="enter">Погода</option>
         <option value="sport">Спорт</option>
         <option value="human">Человек</option>
-        <option value="scien">Наука</option>
+        <option value="scien">Цветы</option>
         <option value="city">Город</option>
         <option value="country">Страны</option>
         <option value="home">Дом</option>
-        <option value="socie">Общество</option>
+        <option value="socie">Одежда</option>
     </select>
             <p class="textInput">Слово</p>
             <div class="wrap-input100 validate-input">

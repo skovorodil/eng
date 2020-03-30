@@ -1,0 +1,106 @@
+
+   .wrapper { 
+     padding-top:25px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+   grid-template-columns: 300px 300px 300px 300px;
+   grid-column-gap: 25px;
+   justify-content: center;
+   
+} 
+   .icon {
+      height: 90px;
+      width: 90px;
+      margin-left: 105px;
+      margin-top: 20px;
+      align-items: center;
+      
+   }
+   .firstBlock {
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    height: 350px;
+    width: 300px;
+    float: left;
+   }
+   .secBlock {
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+    width: 300px;
+    height: 350px;
+   }
+   .thrBlock {
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+    width: 300px;
+    height: 350px;
+   }
+   .fourBlock {
+    margin-top: 180px;
+    background: #fff;
+    border-radius: 15px 15px 15px 15px;
+    float: left;
+    width: 300px;
+    height: 350px;
+   }
+   .text {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 26px;
+  text-align: center;
+  color: #C3BCBC;
+   }
+  .words {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center;
+  color: #C3BCBC;  
+  margin-top:20px;
+  margin-bottom:20px;
+  }
+   .login100-form-btn {
+ margin-left:45px;
+  width: 70%;
+  height: 45px;
+  border-radius: 10px;
+  background: #F38181;
+  font-family: Arial;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+    }
+   
+    .login100-form-btn:hover {
+         background: #F8ADAD;
+    }
+    
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
