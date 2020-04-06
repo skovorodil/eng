@@ -1,5 +1,4 @@
-from selenium import webdriver
-driver = webdriver.Chrome('C:\\Users\\mi\\Desktop\\са1т2\\chromedriver_win32\\chromedriver.exe')
+from selenium.webdriver import Chrome
 EMAIL = "zenit1032@gmail.com"
 def test_login() :
       open()
