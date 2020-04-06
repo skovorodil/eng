@@ -14,5 +14,6 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 
 script:
-- cd home/travis/virtualenv/python2.7.9/
+- cd home/travis/virtualenv
+- ls
 - pytest
