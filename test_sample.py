@@ -1,7 +1,7 @@
 from selenium import webdriver
 driver = webdriver.Chrome('C:\\Users\\mi\\Desktop\\са1т2\\chromedriver_win32\\chromedriver.exe')
 EMAIL = "zenit1032@gmail.com"
-def firstTest() :
+def test_login() :
       open()
       driver.find_element_by_id("email").send_keys(EMAIL)
       driver.find_element_by_id("pas").send_keys("12345")
@@ -13,6 +13,6 @@ def firstTest() :
 def open() :
       driver.get("https://eng-slang.000webhostapp.com/")
       driver.maximize_window()
-firstTest()
+test_login()
 
 
