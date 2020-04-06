@@ -8,4 +8,4 @@ before_install:
   ⋮
   - pip install selenium
 script:
-$python test.py
+- pytest
