@@ -5,19 +5,19 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 driver = webdriver.Chrome("chromedriver")
 EMAIL = "zenit1032@gmail.com"
-def test_reg() :
-      print ("start test 2")
-      open()
-      WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "reg"))).click()
-      print ("registration 2")
-      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regEmail"))).send_keys("test"+str(random.randint(0, 1000))+"@gmail.com")
-      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regName"))).send_keys("Вадим"+str(random.randint(0, 1000)))
-      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regPhone"))).send_keys(str(random.randint(0, 100000)))
-      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regPas"))).send_keys("12345")
-      WebDriverWait(driver, 160).until(EC.element_to_be_clickable((By.ID, "regButton"))).click()
-      currentUrl = driver.current_url
-      assert(currentUrl == ("https://eng-slang.000webhostapp.com/welcome.php")), "Oh no! This assertion failed!"
-      print ("OK2")
+# def test_reg() :
+      #print ("start test 2")
+      #open()
+      #WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "reg"))).click()
+      #print ("registration 2")
+      #WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regEmail"))).send_keys("test"+str(random.randint(0, 1000))+"@gmail.com")
+      #WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regName"))).send_keys("Вадим"+str(random.randint(0, 1000)))
+      #WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regPhone"))).send_keys(str(random.randint(0, 100000)))
+      #WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regPas"))).send_keys("12345")
+      #WebDriverWait(driver, 160).until(EC.element_to_be_clickable((By.ID, "regButton"))).click()
+      #currentUrl = driver.current_url
+      #assert(currentUrl == ("https://eng-slang.000webhostapp.com/welcome.php")), "Oh no! This assertion failed!"
+      #print ("OK2")
 def test_login() :
       print ("start test 1")
       open()
