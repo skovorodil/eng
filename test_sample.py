@@ -7,12 +7,12 @@ driver = webdriver.Chrome("chromedriver")
 EMAIL = "zenit1032@gmail.com"
 def test_reg() :
       open()
-      WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "reg"))).click()
-      WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "regEmail"))).send_keys("test"+str(random.randint(0, 1000))+"@gmail.com")
-      WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "regName"))).send_keys("Вадим"+str(random.randint(0, 1000)))
-      WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "regPhone"))).send_keys(str(random.randint(0, 100000)))
-      WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "regPas"))).send_keys("12345")
-      WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "regButton"))).click()
+      WebDriverWait(driver, 40).until(EC.element_to_be_clickable((By.ID, "reg"))).click()
+      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regEmail"))).send_keys("test"+str(random.randint(0, 1000))+"@gmail.com")
+      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regName"))).send_keys("Вадим"+str(random.randint(0, 1000)))
+      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regPhone"))).send_keys(str(random.randint(0, 100000)))
+      WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regPas"))).send_keys("12345")
+      WebDriverWait(driver, 160).until(EC.element_to_be_clickable((By.ID, "regButton"))).click()
       currentUrl = driver.current_url
       assert(currentUrl == ("https://eng-slang.000webhostapp.com/welcome.php")), "Oh no! This assertion failed!"
       print ("OK2")
