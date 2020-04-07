@@ -35,6 +35,7 @@ def close() :
       driver.get("https://www.google.ru/")
 test_login()
 test_reg()
+test_login()
 close()
 
 
