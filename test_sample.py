@@ -12,6 +12,7 @@ def test_login() :
       
 def open() :
       driver.get("https://eng-slang.000webhostapp.com/")
+      driver.maximize_window()
 test_login()
 
 
