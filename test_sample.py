@@ -9,7 +9,7 @@ def test_login() :
       currentUrl = driver.current_url
       assert(currentUrl == ("https://eng-slang.000webhostapp.com/main.php")), "Oh no! This assertion failed!"
       print ("OK")
- def test_reg() :
+def test_reg() :
       open()
       driver.find_element_by_id("reg").click()
       driver.find_element_by_id("regEmail").send_keys("test"+str(random.randint(0, 1000))+"@gmail.com")
