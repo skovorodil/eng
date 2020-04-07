@@ -8,7 +8,7 @@ EMAIL = "zenit1032@gmail.com"
 def test_reg() :
       print ("start test 2")
       open()
-      WebDriverWait(driver, 40).until(EC.element_to_be_clickable((By.ID, "reg"))).click()
+      driver.find_element_by_id("reg").click()
       print ("registration 2")
       WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regEmail"))).send_keys("test"+str(random.randint(0, 1000))+"@gmail.com")
       WebDriverWait(driver, 80).until(EC.element_to_be_clickable((By.ID, "regName"))).send_keys("Вадим"+str(random.randint(0, 1000)))
