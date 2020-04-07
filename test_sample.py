@@ -15,7 +15,7 @@ def test_reg() :
       WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "regButton"))).click()
       currentUrl = driver.current_url
       assert(currentUrl == ("https://eng-slang.000webhostapp.com/welcome.php")), "Oh no! This assertion failed!"
-      print ("OK")
+      print ("OK2")
 def test_login() :
       open()
       WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "email"))).send_keys(EMAIL)
@@ -23,7 +23,7 @@ def test_login() :
       WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "login"))).click()
       currentUrl = driver.current_url
       assert(currentUrl == ("https://eng-slang.000webhostapp.com/main.php")), "Oh no! This assertion failed!"
-      print ("OK")
+      print ("OK1")
       
 def open() :
       driver.get("https://eng-slang.000webhostapp.com/")
